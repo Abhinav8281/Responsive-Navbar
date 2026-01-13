@@ -1,20 +1,18 @@
-@import url(
-"https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap");
 
-*{
- padding: 0;
- margin: 0;
- box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
+body {
   background: url(./assets/4477349.jpg) no-repeat center center/cover;
   min-height: 100vh;
   position: relative;
   font-family: "josefin sans";
 }
 
-body::before{
-
+body::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -23,21 +21,21 @@ body::before{
   z-index: -1;
 }
 
-a{
+a {
   text-decoration: none;
 }
 header {
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  padding: 2rem 0 ;
+  padding: 2rem 0;
 }
-.container{
+.container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
-.container nav{
+.container nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,11 +45,11 @@ header {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.container .nav-link{
+.container .nav-link {
   display: flex;
 }
 
-.container .nav-link li{
+.container .nav-link li {
   list-style: none;
   margin: 0 0.5rem;
 }
@@ -65,8 +63,8 @@ header {
 }
 
 .container ul li a:hover,
- .container ul li a.active {
-background-color: #ecf0f1;
+.container ul li a.active {
+  background-color: #ecf0f1;
 }
 
 .content {
@@ -75,11 +73,11 @@ background-color: #ecf0f1;
   left: 50%;
   transform: translate(-50%, 0%);
 }
-.content h2{
+.content h2 {
   font-size: 6rem;
   color: #fff;
 }
-.icon{
+.icon {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -89,10 +87,10 @@ background-color: #ecf0f1;
     font-size: 4rem;
     text-align: center;
   }
-  .icon{
+  .icon {
     display: block;
   }
-  .container .nav-link{
+  .container .nav-link {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #fff;
@@ -102,10 +100,10 @@ background-color: #ecf0f1;
     top: -800px;
     right: 0;
     z-index: 10;
-     transition: all 0.7s;
+    transition: all 0.7s;
   }
-  .nav-link.active{
+  .nav-link.active {
     top: 15%;
-    transition: all 0.7s ease-in ;
+    transition: all 0.7s ease-in;
   }
 }
